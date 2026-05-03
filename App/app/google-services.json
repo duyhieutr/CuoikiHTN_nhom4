@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "707499469844",
+    "firebase_url": "https://polynomial-coda-389612-default-rtdb.firebaseio.com",
+    "project_id": "polynomial-coda-389612",
+    "storage_bucket": "polynomial-coda-389612.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707499469844:android:e9cdf904c3746c43740b01",
+        "android_client_info": {
+          "package_name": "com.example.gps_tracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9itIhtze6xp0EMDz_jTQ3Ks7uRAat66A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

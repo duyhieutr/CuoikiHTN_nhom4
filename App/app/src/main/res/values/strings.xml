@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">gps_tracking</string>
+    <string name="signup_text">Dont have an Account? Sign up here</string>
+    <string name="signin_text">Have an Account? Sign in here</string>
+</resources>

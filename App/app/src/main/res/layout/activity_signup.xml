@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btnBack"/>
+
+        <Button
+            android:id="@+id/btnGoogleSignup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtTitle"
+            android:drawableLeft="@drawable/ic_google"
+            android:drawablePadding="10dp"
+            android:text="Sign in with Google"
+            android:backgroundTint="#E6F0FA"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:id="@+id/dividerSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/btnGoogleSignup">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or sign up with"
+                android:textColor="@color/black"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/dividerSection"/>
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Becca Ade"
+            android:inputType="textPersonName"
+            android:layout_below="@id/txtFullName"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edtFullName"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abc@gmail.com"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/txtEmail"/>
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edtEmail"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="**********"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/ic_visibility"
+            android:layout_below="@id/txtPassword"/>
+
+        <TextView
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edtPassword"/>
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="**********"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/ic_visibility"
+            android:layout_below="@id/txtConfirmPassword"/>
+
+        <CheckBox
+            android:id="@+id/chkTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By creating an account, I accept terms of use and privacy policy"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/edtConfirmPassword"/>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Signup"
+            android:backgroundTint="#0E2ED0"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/chkTerms"/>
+        <TextView
+            android:id="@+id/txtSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSignup"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/signin_text"/>
+
+    </RelativeLayout>
+</ScrollView>
